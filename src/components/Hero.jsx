@@ -60,7 +60,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
         <div className="hero-visual">
           <div className="phone-mockup">
             <div className="phone-frame">

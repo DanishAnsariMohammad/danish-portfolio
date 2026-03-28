@@ -61,6 +61,7 @@ const contactLinks = [
 ];
 
 export default function Contact() {
+  const recipientEmail = 'danishouz@email.com';
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [status, setStatus] = useState(null); // null | 'sending' | 'sent' | 'error'
 
@@ -70,13 +71,34 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus('sending');
-    // Simulate form submission
-    setTimeout(() => {
-      setStatus('sent');
-      setForm({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setStatus(null), 4000);
-    }, 1500);
+
+    const name = form.name.trim();
+    const email = form.email.trim();
+    const subject = form.subject.trim();
+    const message = form.message.trim();
+
+    if (!name || !email || !subject || !message) {
+      setStatus('error');
+      return;
+    }
+
+    const body = [
+      'Hi Danish,',
+      '',
+      `Name: ${name}`,
+      `Email: ${email}`,
+      '',
+      message,
+      '',
+      'Sent from portfolio contact form.',
+    ].join('\n');
+
+    const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
+    setStatus('sent');
+    setForm({ name: '', email: '', subject: '', message: '' });
+    setTimeout(() => setStatus(null), 5000);
   };
 
   return (
@@ -128,7 +150,7 @@ export default function Contact() {
 
           {/* Right: Form */}
           <div className="contact-form-wrapper">
-            <form className="contact-form" onSubmit={handleSubmit} noValidate>
+            <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="name">Your Name</label>
@@ -189,17 +211,12 @@ export default function Contact() {
                 className="form-submit"
                 disabled={status === 'sending'}
               >
-                {status === 'sending' ? (
-                  <>
-                    <span className="spinner" />
-                    Sending...
-                  </>
-                ) : status === 'sent' ? (
+                {status === 'sent' ? (
                   <>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
-                    Message Sent!
+                    Mail App Opened
                   </>
                 ) : (
                   <>
@@ -211,6 +228,18 @@ export default function Contact() {
                   </>
                 )}
               </button>
+
+              {status === 'error' && (
+                <p className="form-status error">
+                  Please fill in all fields before sending.
+                </p>
+              )}
+
+              {status === 'sent' && (
+                <p className="form-status success">
+                  Your email draft has been opened. Please click send in your mail app.
+                </p>
+              )}
             </form>
           </div>
         </div>

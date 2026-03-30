@@ -10,8 +10,8 @@ const contactLinks = [
       </svg>
     ),
     label: 'Email',
-    value: 'danishouz@email.com',
-    href: 'mailto:danishouz@email.com',
+    value: 'danishouz@gmail.com',
+    href: 'mailto:danishouz@gmail.com',
     color: '#6c63ff',
   },
   {

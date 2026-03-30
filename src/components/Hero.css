@@ -338,8 +338,18 @@
 }
 
 /* Tech Badges */
-.tech-badge {
+.tech-badges-column {
   position: absolute;
+  top: 14%;
+  left: -16%;
+  right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.tech-badge {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -356,20 +366,14 @@
 }
 
 .badge-rn {
-  top: 10%;
-  right: -10%;
   animation: float 5s 0s ease-in-out infinite;
 }
 
 .badge-js {
-  bottom: 20%;
-  right: -15%;
   animation: float 5s 1.5s ease-in-out infinite;
 }
 
 .badge-ts {
-  top: 50%;
-  left: -10%;
   animation: float 5s 3s ease-in-out infinite;
 }
 
@@ -474,15 +478,16 @@
   }
 
   .tech-badge {
-    position: static;
     font-size: 0.72rem;
     padding: 8px 12px;
   }
 
-  .badge-rn,
-  .badge-js,
-  .badge-ts {
-    inset: auto;
+  .tech-badges-column {
+    position: static;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 0;
   }
 }
 
@@ -500,5 +505,10 @@
     font-size: 0.68rem;
     padding: 7px 10px;
     gap: 6px;
+  }
+
+  .tech-badges-column {
+    align-items: center;
+    padding-left: 0;
   }
 }

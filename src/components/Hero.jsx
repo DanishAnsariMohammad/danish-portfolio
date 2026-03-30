@@ -82,17 +82,19 @@ export default function Hero() {
           </div>
 
           {/* Floating tech badges */}
-          <div className="tech-badge badge-rn">
-            <span className="tech-icon">⚛️</span>
-            <span>React Native</span>
-          </div>
-          <div className="tech-badge badge-js">
-            <span className="tech-icon">🟨</span>
-            <span>JavaScript</span>
-          </div>
-          <div className="tech-badge badge-ts">
-            <span className="tech-icon">🔷</span>
-            <span>TypeScript</span>
+          <div className="tech-badges-column">
+            <div className="tech-badge badge-rn">
+              <span className="tech-icon">⚛️</span>
+              <span>React Native</span>
+            </div>
+            <div className="tech-badge badge-js">
+              <span className="tech-icon">🟨</span>
+              <span>JavaScript</span>
+            </div>
+            <div className="tech-badge badge-ts">
+              <span className="tech-icon">🔷</span>
+              <span>Mobile Application</span>
+            </div>
           </div>
         </div>
       </div>

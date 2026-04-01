@@ -354,6 +354,18 @@
   transform: translateY(-2px);
 }
 
+.project-btn.detail {
+  background: rgba(108, 99, 255, 0.1);
+  border: 1px solid rgba(108, 99, 255, 0.22);
+  color: var(--primary-light);
+}
+
+.project-btn.detail:hover {
+  background: rgba(108, 99, 255, 0.16);
+  border-color: rgba(108, 99, 255, 0.45);
+  transform: translateY(-2px);
+}
+
 .project-btn.primary {
   background: var(--gradient-1);
   border: none;

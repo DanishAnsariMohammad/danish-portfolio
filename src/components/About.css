@@ -229,6 +229,69 @@
   box-shadow: 0 12px 32px rgba(108, 99, 255, 0.4);
 }
 
+.resume-panel {
+  margin-top: 14px;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid var(--card-border);
+  background: linear-gradient(160deg, rgba(108, 99, 255, 0.08), rgba(255, 101, 132, 0.05));
+  text-align: left;
+}
+
+.resume-panel-head {
+  margin-bottom: 12px;
+}
+
+.resume-label {
+  display: inline-flex;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--primary-light);
+  margin-bottom: 8px;
+}
+
+.resume-panel-head p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+.resume-points {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.resume-points span {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--text-primary);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.about-resume-btn.ghost {
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--card-border);
+}
+
+.about-resume-btn.ghost:hover {
+  border-color: rgba(108, 99, 255, 0.4);
+  color: var(--text-primary);
+  box-shadow: none;
+}
+
 @media (max-width: 1000px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -250,5 +313,9 @@
   .about-left {
     flex-direction: column;
     align-items: center;
+  }
+
+  .resume-actions {
+    flex-direction: column;
   }
 }

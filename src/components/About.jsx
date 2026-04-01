@@ -110,18 +110,46 @@ export default function About() {
               </div>
             </div>
 
-            <a
-              className="about-resume-btn"
-              href="/Mohammad_Danish_Ansari_Resume.pdf"
-              download="Mohammad_Danish_Ansari_Resume.pdf"
-            >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
-              Download Resume
-            </a>
+            <div className="resume-panel">
+              <div className="resume-panel-head">
+                <span className="resume-label">Professional Resume</span>
+                <p>ATS-friendly profile with selected production mobile projects and measurable impact highlights.</p>
+              </div>
+
+              <div className="resume-points">
+                <span>12+ published apps on Google Play</span>
+                <span>React Native specialist for enterprise and civic domains</span>
+                <span>Clean architecture, performance, and delivery ownership</span>
+              </div>
+
+              <div className="resume-actions">
+                <a
+                  className="about-resume-btn ghost"
+                  href="/Mohammad_Danish_Ansari_Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                  View Resume
+                </a>
+
+                <a
+                  className="about-resume-btn"
+                  href="/Mohammad_Danish_Ansari_Resume.pdf"
+                  download="Mohammad_Danish_Ansari_Resume.pdf"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  Download Resume
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

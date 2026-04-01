@@ -41,15 +41,16 @@ const profile = {
 };
 
 const summary =
-  'React Native developer focused on building performant, production-grade cross-platform mobile apps for iOS and Android. Experienced in delivering user-friendly products with clean architecture, smooth UX, and reliable API integrations.';
+  'React Native Developer with proven experience shipping production-grade Android and cross-platform applications in civic tech, enterprise, education, and consumer domains. Strong ownership across product planning, implementation, performance optimization, and release management with a focus on scalable architecture and user-centered UX.';
 
 const skills = [
   'React Native',
+  'TypeScript',
   'Expo',
   'React Navigation',
   'Redux / Zustand',
   'JavaScript (ES6+)',
-  'HTML / CSS',
+  'Android Build & Release',
   'REST APIs',
   'Firebase',
   'Git / GitHub',
@@ -57,9 +58,24 @@ const skills = [
 ];
 
 const highlights = [
-  'Built and shipped 12+ production mobile apps on Google Play.',
-  'Delivered apps across civic tech, enterprise, HRMS, education, and fitness domains.',
-  'Strong focus on performance, clean architecture, and user-centered design.',
+  'Delivered 12+ production mobile applications published on Google Play.',
+  'Built products across civic tech, enterprise operations, HRMS, education, lifestyle, and fitness domains.',
+  'Consistently improved usability and reliability in real-world, mobile-first workflows.',
+  'Hands-on ownership from implementation to release coordination and iterative improvements.',
+];
+
+const experience = [
+  {
+    role: 'React Native Developer',
+    company: 'Freelance / Product Delivery',
+    period: '2022 - Present',
+    points: [
+      'Designed and developed production mobile apps with reusable architecture and scalable screen flows.',
+      'Integrated APIs, authentication, and role-based workflows for civic and enterprise use cases.',
+      'Collaborated with stakeholders to convert requirements into stable, user-friendly mobile journeys.',
+      'Managed Play Store release cycles, QA fixes, and post-release iteration planning.',
+    ],
+  },
 ];
 
 const selectedProjects = [
@@ -145,6 +161,31 @@ for (const item of highlights) {
     .fontSize(10.5)
     .fillColor(palette.body)
     .text(`- ${item}`, { lineGap: 2 });
+}
+
+sectionTitle('PROFESSIONAL EXPERIENCE');
+for (const item of experience) {
+  doc
+    .font('Helvetica-Bold')
+    .fontSize(10.8)
+    .fillColor(palette.heading)
+    .text(`${item.role} | ${item.company}`);
+
+  doc
+    .font('Helvetica-Oblique')
+    .fontSize(9.8)
+    .fillColor(palette.muted)
+    .text(item.period);
+
+  for (const point of item.points) {
+    doc
+      .font('Helvetica')
+      .fontSize(10.2)
+      .fillColor(palette.body)
+      .text(`- ${point}`, { indent: 10, lineGap: 2 });
+  }
+
+  doc.moveDown(0.3);
 }
 
 sectionTitle('SELECTED PROJECTS');

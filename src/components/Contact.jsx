@@ -61,7 +61,7 @@ const contactLinks = [
 ];
 
 export default function Contact() {
-  const recipientEmail = 'danishouz@email.com';
+  const recipientEmail = 'danishouz@gmail.com';
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [status, setStatus] = useState(null); // null | 'sending' | 'sent' | 'error'
 

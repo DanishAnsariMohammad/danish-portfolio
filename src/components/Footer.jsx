@@ -48,7 +48,7 @@ export default function Footer() {
               <li><a href="https://github.com/DanishAnsariMohammad" target="_blank" rel="noopener noreferrer">GitHub</a></li>
               <li><a href="https://gitlab.com/danishouz" target="_blank" rel="noopener noreferrer">GitLab</a></li>
               <li><a href="https://www.linkedin.com/in/ansari-danish-3a2b2720b" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-              <li><a href="mailto:danishouz@email.com">Email</a></li>
+              <li><a href="mailto:danishouz@gmail.com">Email</a></li>
               <li><a href="https://wa.me/917400255185" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
             </ul>
           </div>

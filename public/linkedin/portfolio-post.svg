@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Danish Ansari Portfolio Post</title>
+  <desc id="desc">LinkedIn post image promoting Danish Ansari portfolio with call to action.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04131f" />
+      <stop offset="50%" stop-color="#0c2b3d" />
+      <stop offset="100%" stop-color="#1d4f63" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1fd1ff" />
+      <stop offset="100%" stop-color="#9cfffa" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)" />
+  <circle cx="920" cy="140" r="220" fill="#38d9ff" opacity="0.1" />
+  <circle cx="150" cy="920" r="250" fill="#8df5ff" opacity="0.08" />
+
+  <g opacity="0.22" stroke="#74dfff" stroke-width="1">
+    <path d="M0 190h1080" />
+    <path d="M0 280h1080" />
+    <path d="M0 370h1080" />
+    <path d="M0 460h1080" />
+    <path d="M0 550h1080" />
+    <path d="M0 640h1080" />
+    <path d="M0 730h1080" />
+    <path d="M0 820h1080" />
+  </g>
+
+  <text x="84" y="170" fill="#b7f4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" letter-spacing="2">NEW PORTFOLIO</text>
+  <text x="84" y="280" fill="#ffffff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="88" font-weight="800">Mohammad</text>
+  <text x="84" y="370" fill="#ffffff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="88" font-weight="800">Danish Ansari</text>
+
+  <rect x="84" y="410" width="520" height="8" fill="url(#accent)" filter="url(#glow)" />
+
+  <text x="84" y="500" fill="#d6f9ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="38" font-weight="600">React Native Developer</text>
+  <text x="84" y="560" fill="#c7edf7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">Building clean, fast, cross-platform mobile apps.</text>
+
+  <rect x="84" y="635" rx="16" ry="16" width="540" height="146" fill="#04131f" opacity="0.82" stroke="#59daf7" stroke-opacity="0.55" />
+  <text x="110" y="690" fill="#9defff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="600">Scan QR to explore my portfolio</text>
+  <text x="110" y="740" fill="#dffaff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">danish-portfolio-teal-delta.vercel.app</text>
+
+  <g transform="translate(710, 505)">
+    <rect width="290" height="290" rx="24" fill="#ffffff" />
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6AQMAAACyIsh+AAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABrUlEQVRoge2YwbGDMAxE5eHAMSVQCqXZpVFKSuDIgbH+ahUS80MBQaBDBpR3ibKS1ha5446fi4darNLPeMnJXubhlYsEPPGR1t7TVbpFZJiQ64IBo2pCHVSRThWZeZiy1pCA1WEa1SoyS1yAD1YIqvqSgMt+sYdsPW16OOiLkwM+sAwYp5xqtzwOp9zJgSYAoLnRAF/fnB9gHbiJTN4VTzMqUnJarwWgPkWlU92v5vKWfRRAMkbX0jNdWRpUpLSSiABgMIuJnasZFoTbS5q/Owpgs1r6/ejKVa4FWCtL7ZTD3JxYT660hjMAgO5W9x3W5y57KKMpVBAA3Y2FTF9t/mp5qJWmmdURAKykQi1zN1kewE7VFwEwuaU6abLv1GW/M94RALrpfqETU/789/aKBFgd6EAc8LuO8pF9HMCPDxhnlarWTekXAl7hlwMleclMIrGA7bToeqh02MOm/0DAU2i0/IrDDafJ/v/lwOmBkTdaVHX5qPrryusqgFD29iXH3K794wA4+2OIvY5R2nR/FEC2izvKnoYTZUjBgGaIKQ8SM8/+h1MuMHDHHT8Vf+1mHz2fEc53AAAAAElFTkSuQmCC" x="25" y="25" width="240" height="240" />
+  </g>
+
+  <text x="84" y="940" fill="#e6fcff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="29" font-weight="600">Open to freelance and full-time opportunities</text>
+  <text x="84" y="985" fill="#99dcec" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25">linkedin.com/in/ansari-danish-3a2b2720b</text>
+</svg>

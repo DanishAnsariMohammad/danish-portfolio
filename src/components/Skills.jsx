@@ -46,7 +46,7 @@ const techStack = [
   { name: 'Git', icon: `${CDN}/git/git-original.svg`, color: '#f05032' },
   { name: 'GitHub', icon: `${CDN}/github/github-original.svg`, color: '#ffffff' },
   { name: 'Android', icon: `${CDN}/android/android-original.svg`, color: '#3ddc84' },
-  { name: 'Swift / iOS', icon: `${CDN}/swift/swift-original.svg`, color: '#f05138' },
+  // { name: 'Swift / iOS', icon: `${CDN}/swift/swift-original.svg`, color: '#f05138' },
   { name: 'Figma', icon: `${CDN}/figma/figma-original.svg`, color: '#f24e1e' },
   { name: 'VS Code', icon: `${CDN}/vscode/vscode-original.svg`, color: '#007acc' },
 ];
